@@ -1,0 +1,110 @@
+# Challenge Post-Mortem & Submission Log
+
+> Copy this file to `LOG.md` and complete all sections before submitting.
+
+**Candidate name:**  
+**Date completed:**
+
+---
+
+## Part 1 — Conversion Tracking
+
+### Architecture Decisions
+
+Describe how you structured the two ingestion paths (web → sGTM → GA4 vs. offline CRM → script → GA4).
+
+- Why did you route offline events through sGTM or directly to the Measurement Protocol?
+- How did you handle PII sanitization in each path?
+- What custom dimensions did you register in GA4, and why?
+
+### Code structure
+
+Explain your module layout (`transform.py`, `send_ga4.py`, etc.) and any changes you made to the starter code.
+
+### sGTM Configuration
+
+Document your server-side tagging setup:
+
+- Web container ID and Server container ID
+- Where you obtained `CONTAINER_CONFIG` and how you applied it
+- Server container URL registered in GTM Admin
+- Web Google Tag transport configuration
+- sGTM Client, Tag, and Trigger setup
+- Difference between the live (`:8888`) and preview (`:8889`) endpoints
+- How you verified `/g/collect` requests are handled (e.g. curl, Network tab, sGTM Preview)
+
+### Blockers & Debugging Trail
+
+Document issues you encountered in chronological order. For each blocker:
+
+| # | Symptom | Hypothesis | Test / Action | Result |
+|---|---------|------------|---------------|--------|
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
+
+Add more rows as needed.
+
+### Verification & Evidence
+
+Describe what you validated and how you chose to evidence your work.
+
+**Evidence:**
+
+---
+
+## Part 2 — Data Engineering
+
+### Data Exploration
+
+Summarize your review of the source datasets:
+
+- `data/google_ads.csv`
+- `data/meta.csv`
+- `data/ga4.csv`
+
+### Data Model
+
+Document your proposed BigQuery data model:
+
+- Tables and relationships
+- Key transformations
+
+### Business Questions
+
+Address the four questions from the README:
+
+1. Multi-Channel Performance & Investment
+2. Attribution & Campaign Effectiveness
+3. Acquisition Channel Analysis
+4. BigQuery Data Model & Architecture
+
+### Action Plan
+
+Outline the plan the internal team can execute, including client requirements and data transformation needs.
+
+---
+
+## Executive Summary
+
+*Write for a non-technical ad-operations leader (max 1 page).*
+
+### Situation
+
+What was the client trying to accomplish?
+
+### What was broken / missing
+
+What issues existed in the starter environment or client data setup?
+
+### What we delivered
+
+What did you implement, model, or recommend?
+
+### Known limitations
+
+What gaps or discrepancies remain?
+
+### Recommended next steps
+
+What would you propose for production rollout?

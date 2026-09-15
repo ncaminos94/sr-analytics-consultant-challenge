@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MT3WNZMS');</script>
+<!-- End Google Tag Manager -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTM Test Page — First-Party Ingestion Challenge</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 640px; margin: 2rem auto; padding: 0 1rem; }
+    button { padding: 0.75rem 1.5rem; margin: 0.5rem 0.5rem 0.5rem 0; cursor: pointer; }
+    .note { background: #f0f4f8; padding: 1rem; border-radius: 6px; font-size: 0.9rem; }
+    code { background: #e8e8e8; padding: 0.1rem 0.3rem; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MT3WNZMS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <h1>Web Event Test Page</h1>
+  <p class="note">
+  Install your client-side GTM container snippet on this page, then use the
+  buttons below to push events to <code>dataLayer</code>.
+  </p>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function pushPurchase() {
+      dataLayer.push({
+        event: 'purchase',
+        ecommerce: {
+          transaction_id: 'WEB-TXN-' + Date.now(),
+          value: 99.99,
+          currency: 'USD',
+          items: [{
+            item_id: 'SKU-WEB-001',
+            item_name: 'Web Test Product',
+            price: 99.99,
+            quantity: 1
+          }]
+        },
+        user_data: {
+          email: 'test.user@example.com',
+          phone: '+15551234567'
+        }
+      });
+      console.log('Pushed purchase event', dataLayer[dataLayer.length - 1]);
+    }
+
+    function pushLead() {
+      dataLayer.push({
+        event: 'generate_lead',
+        lead_type: 'contact_form',
+        value: 0,
+        currency: 'USD',
+        user_data: {
+          email: 'lead@prospect.com',
+          phone: '+15559876543'
+        }
+      });
+      console.log('Pushed generate_lead event', dataLayer[dataLayer.length - 1]);
+    }
+  </script>
+
+  <h2>Trigger Test Events</h2>
+  <button onclick="pushPurchase()">Simulate Purchase</button>
+  <button onclick="pushLead()">Simulate Lead</button>
+</body>
+</html>

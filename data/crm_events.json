@@ -1,0 +1,169 @@
+[
+  {
+    "record_id": "crm-001",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10001",
+    "timestamp": "2025-08-10T14:32:00Z",
+    "client_id": "1234567890.1691234567",
+    "user_id": "usr_abc123",
+    "value": 149.99,
+    "currency": "USD",
+    "items": [
+      {"item_id": "SKU-001", "item_name": "Premium Plan", "price": 149.99, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "Jane.Doe@Example.COM",
+      "phone": "+1 (555) 123-4567"
+    },
+    "consent": {"marketing": true, "analytics": true},
+    "campaign": {"source": "google", "medium": "cpc", "name": "brand-search"}
+  },
+  {
+    "record_id": "crm-002",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10002",
+    "timestamp": "2025-08-11T09:15:00+00:00",
+    "client_id": "9876543210.1692345678",
+    "value": 79.5,
+    "currency": "usd",
+    "items": [
+      {"item_id": "SKU-002", "item_name": "Starter Kit", "price": 79.5, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "bob.smith@gmail.com",
+      "phone": "5559876543"
+    },
+    "consent": {"marketing": true, "analytics": true},
+    "campaign": {"source": "google", "medium": "cpc", "name": "retargeting-display"}
+  },
+  {
+    "record_id": "crm-003",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10003",
+    "client_id": "5555555555.1693456789",
+    "value": 299.0,
+    "currency": "US",
+    "items": [
+      {"item_id": "SKU-003", "item_name": "Enterprise License", "price": 299.0, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "alice@company.io"
+    },
+    "consent": {"marketing": true, "analytics": true},
+    "campaign": {"source": "dv360", "medium": "display", "name": "awareness-q3"}
+  },
+  {
+    "record_id": "crm-004",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10001",
+    "timestamp": "2025-08-10T16:45:00Z",
+    "client_id": "1234567890.1691234567",
+    "user_id": "usr_abc123",
+    "value": 149.99,
+    "currency": "USD",
+    "items": [
+      {"item_id": "SKU-001", "item_name": "Premium Plan", "price": 149.99, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "Jane.Doe@Example.COM",
+      "phone": "+1 (555) 123-4567"
+    },
+    "consent": {"marketing": true, "analytics": true},
+    "campaign": {"source": "google", "medium": "cpc", "name": "brand-search"}
+  },
+  {
+    "record_id": "crm-005",
+    "event_name": "generate_lead",
+    "transaction_id": "LEAD-20001",
+    "timestamp": "2025-08-12T11:00:00Z",
+    "client_id": "1111111111.1694567890",
+    "value": 0,
+    "currency": "USD",
+    "user_data": {
+      "email": "prospect@startup.co",
+      "phone": "+44 20 7946 0958"
+    },
+    "consent": {"marketing": false, "analytics": true}
+  },
+  {
+    "record_id": "crm-006",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10004",
+    "timestamp": "2025-08-12T18:30:00Z",
+    "user_id": "usr_xyz789",
+    "value": 45.0,
+    "currency": "EUR",
+    "items": [
+      {"item_id": "SKU-004", "item_name": "Add-on Module", "price": 45.0, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "carlos.m@empresa.es",
+      "phone": "+34 612 34 56 78"
+    },
+    "consent": {"marketing": true, "analytics": true},
+    "campaign": {"source": "google", "medium": "cpc", "name": "eu-expansion"}
+  },
+  {
+    "record_id": "crm-007",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10005",
+    "timestamp": "invalid-timestamp",
+    "client_id": "2222222222.1695678901",
+    "value": 199.99,
+    "currency": "GBP",
+    "items": [
+      {"item_id": "SKU-005", "item_name": "Annual Subscription", "price": 199.99, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "james.wilson@outlook.com"
+    },
+    "consent": {"marketing": true, "analytics": true}
+  },
+  {
+    "record_id": "crm-008",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10006",
+    "timestamp": "2025-08-13T08:00:00Z",
+    "client_id": "3333333333.1696789012",
+    "value": 0,
+    "currency": "USD",
+    "items": [],
+    "user_data": {},
+    "consent": {"marketing": true, "analytics": true}
+  },
+  {
+    "record_id": "crm-009",
+    "event_name": "purchase",
+    "transaction_id": "TXN-10007",
+    "timestamp": "2025-08-13T12:00:00Z",
+    "client_id": "4444444444.1697890123",
+    "value": 550.0,
+    "currency": "USD",
+    "items": [
+      {"item_id": "SKU-006", "item_name": "Consulting Package", "price": 500.0, "quantity": 1},
+      {"item_id": "SKU-007", "item_name": "Setup Fee", "price": 50.0, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "  SARAH.JONES@CORP.COM  ",
+      "phone": "(555) 000-1111"
+    },
+    "consent": {"marketing": true, "analytics": true},
+    "campaign": {"source": "dv360", "medium": "video", "name": "youtube-pre-roll"}
+  },
+  {
+    "record_id": "crm-010",
+    "event_name": "refund",
+    "transaction_id": "TXN-10008",
+    "timestamp": "2025-08-14T10:00:00Z",
+    "client_id": "5555555555.1698901234",
+    "value": -79.5,
+    "currency": "USD",
+    "items": [
+      {"item_id": "SKU-002", "item_name": "Starter Kit", "price": -79.5, "quantity": 1}
+    ],
+    "user_data": {
+      "email": "refund.request@email.com"
+    },
+    "consent": {"marketing": true, "analytics": true}
+  }
+]
